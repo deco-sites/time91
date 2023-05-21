@@ -7272,9 +7272,9 @@
           "type": "string",
           "title": "Text Button"
         },
-        "email": {
+        "mail": {
           "type": "string",
-          "title": "Email"
+          "title": "Mail"
         }
       },
       "required": [
@@ -7283,7 +7283,7 @@
         "minutes",
         "seconds",
         "textButton",
-        "email"
+        "mail"
       ],
       "title": "deco-sites/time91/sections/Campaing.tsx@Props"
     },
