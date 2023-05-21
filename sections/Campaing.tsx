@@ -39,7 +39,7 @@ export default function CampaignTimer({
   }, [remainingSeconds]);
 
   // Função auxiliar para formatar o tempo restante no formato "HH:MM:SS"
-  const formatTime = (time: number): string => {
+  const formatTime = (time: number) => {
     const hours = Math.floor(time / 3600);
     const minutes = Math.floor((time % 3600) / 60);
     const seconds = Math.floor(time % 60);
