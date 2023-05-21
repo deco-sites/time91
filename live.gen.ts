@@ -5,8 +5,9 @@
 import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "./sections/Links.tsx";
-import * as $$$$$$$$1 from "./sections/Campaing.tsx";
+import * as $$$$$$$$0 from "./sections/Benefits.tsx";
+import * as $$$$$$$$1 from "./sections/Links.tsx";
+import * as $$$$$$$$2 from "./sections/Campaing.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -142,8 +143,9 @@ const manifest = {
     "deco-sites/std/sections/SEO.tsx": i2$$$$10,
     "deco-sites/std/sections/SEOPDP.tsx": i2$$$$11,
     "deco-sites/std/sections/SEOPLP.tsx": i2$$$$12,
-    "deco-sites/time91/sections/Campaing.tsx": $$$$$$$$1,
-    "deco-sites/time91/sections/Links.tsx": $$$$$$$$0,
+    "deco-sites/time91/sections/Benefits.tsx": $$$$$$$$0,
+    "deco-sites/time91/sections/Campaing.tsx": $$$$$$$$2,
+    "deco-sites/time91/sections/Links.tsx": $$$$$$$$1,
   },
   "loaders": {
     "$live/loaders/workflows/events.ts": i2$$$0,

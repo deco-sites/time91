@@ -79,6 +79,7 @@
               "deco-sites/std/sections/SEO.tsx",
               "deco-sites/std/sections/SEOPDP.tsx",
               "deco-sites/std/sections/SEOPLP.tsx",
+              "deco-sites/time91/sections/Benefits.tsx",
               "deco-sites/time91/sections/Campaing.tsx",
               "deco-sites/time91/sections/Links.tsx",
               "$live/matchers/MatchAlways.ts",
@@ -7065,6 +7066,189 @@
       ],
       "title": "deco-sites/std/components/seo/SEOPLP.tsx@Props"
     },
+    "ZGVjby1zaXRlcy90aW1lOTEvc2VjdGlvbnMvQmVuZWZpdHMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "icon": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "ChevronLeft"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ChevronRight"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ChevronUp"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ChevronDown"
+                  },
+                  {
+                    "type": "string",
+                    "const": "QuestionMarkCircle"
+                  },
+                  {
+                    "type": "string",
+                    "const": "User"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ShoppingCart"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Bars3"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Heart"
+                  },
+                  {
+                    "type": "string",
+                    "const": "MagnifyingGlass"
+                  },
+                  {
+                    "type": "string",
+                    "const": "XMark"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Plus"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Minus"
+                  },
+                  {
+                    "type": "string",
+                    "const": "MapPin"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Phone"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Elo"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Mastercard"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Visa"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Pix"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Logo"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Facebook"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Instagram"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Tiktok"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Truck"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Discount"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Return"
+                  },
+                  {
+                    "type": "string",
+                    "const": "CreditCard"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Deco"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Discord"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Trash"
+                  },
+                  {
+                    "type": "string",
+                    "const": "FilterList"
+                  },
+                  {
+                    "type": "string",
+                    "const": "WhatsApp"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Linkedin"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Share"
+                  }
+                ],
+                "type": "string",
+                "title": "Icon"
+              },
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "description": {
+                "type": "string",
+                "title": "Description"
+              }
+            },
+            "required": [
+              "icon",
+              "title",
+              "description"
+            ]
+          },
+          "title": "Items"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "items"
+      ],
+      "title": "deco-sites/time91/sections/Benefits.tsx@Props"
+    },
     "ZGVjby1zaXRlcy90aW1lOTEvc2VjdGlvbnMvQ2FtcGFpbmcudHN4@Props": {
       "type": "object",
       "properties": {
@@ -9628,6 +9812,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90aW1lOTEvc2VjdGlvbnMvQmVuZWZpdHMudHN4": {
+      "title": "deco-sites/time91/sections/Benefits.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lOTEvc2VjdGlvbnMvQmVuZWZpdHMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/time91/sections/Benefits.tsx"
+          ],
+          "default": "deco-sites/time91/sections/Benefits.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90aW1lOTEvc2VjdGlvbnMvQ2FtcGFpbmcudHN4": {
       "title": "deco-sites/time91/sections/Campaing.tsx",
       "type": "object",
@@ -10576,6 +10781,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvU0VPUExQLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lOTEvc2VjdGlvbnMvQmVuZWZpdHMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90aW1lOTEvc2VjdGlvbnMvQ2FtcGFpbmcudHN4"
