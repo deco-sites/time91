@@ -2,16 +2,16 @@ import { useEffect, useState } from "preact/hooks";
 
 export interface Props {
   title: string;
-  hours?: string;
-  minutes?: string;
+  hours: string;
+  minutes: string;
   seconds: string;
   textButton: string;
 }
 
 export default function CampaignTimer({
   title,
-  hours = "00",
-  minutes = "00",
+  hours,
+  minutes,
   seconds,
   textButton,
 }: Props) {
@@ -46,17 +46,23 @@ export default function CampaignTimer({
       <div class="flex gap-6 md:gap-16">
         <div class="flex gap-2 items-center">
           <div class="flex flex-col items-center">
-            <p class="text-xl leading-7">{formatTime(remainingSeconds).split(":")[0]}</p>
+            <p class="text-xl leading-7">
+              {formatTime(remainingSeconds).split(":")[0]}
+            </p>
             <p class="text-xs leading-4">Hours</p>
           </div>
           <p class="text-xl leading-7">:</p>
           <div class="flex flex-col items-center">
-            <p class="text-xl leading-7">{formatTime(remainingSeconds).split(":")[1]}</p>
+            <p class="text-xl leading-7">
+              {formatTime(remainingSeconds).split(":")[1]}
+            </p>
             <p class="text-xs leading-4">Minutes</p>
           </div>
           <p class="text-xl leading-7">:</p>
           <div class="flex flex-col items-center">
-            <p class="text-xl leading-7">{formatTime(remainingSeconds).split(":")[2]}</p>
+            <p class="text-xl leading-7">
+              {formatTime(remainingSeconds).split(":")[2]}
+            </p>
             <p class="text-xs leading-4">Seconds</p>
           </div>
         </div>

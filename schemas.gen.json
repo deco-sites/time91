@@ -7257,17 +7257,11 @@
           "title": "Title"
         },
         "hours": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": "string",
           "title": "Hours"
         },
         "minutes": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": "string",
           "title": "Minutes"
         },
         "seconds": {
@@ -7281,6 +7275,8 @@
       },
       "required": [
         "title",
+        "hours",
+        "minutes",
         "seconds",
         "textButton"
       ],
