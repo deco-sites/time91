@@ -7271,6 +7271,10 @@
         "textButton": {
           "type": "string",
           "title": "Text Button"
+        },
+        "email": {
+          "type": "string",
+          "title": "Email"
         }
       },
       "required": [
@@ -7278,7 +7282,8 @@
         "hours",
         "minutes",
         "seconds",
-        "textButton"
+        "textButton",
+        "email"
       ],
       "title": "deco-sites/time91/sections/Campaing.tsx@Props"
     },

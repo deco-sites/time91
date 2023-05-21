@@ -6,6 +6,7 @@ export interface Props {
   minutes: string;
   seconds: string;
   textButton: string;
+  email: string;
 }
 
 export default function CampaignTimer({
@@ -14,8 +15,10 @@ export default function CampaignTimer({
   minutes,
   seconds,
   textButton,
+  email,
 }: Props) {
-  const [remainingSeconds, setRemainingSeconds] = useState(Number(seconds));
+  const totalSeconds = (Number(hours) * 3600) + (Number(minutes) * 60) + Number(seconds);
+  const [remainingSeconds, setRemainingSeconds] = useState(totalSeconds);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -66,9 +69,11 @@ export default function CampaignTimer({
             <p class="text-xs leading-4">Seconds</p>
           </div>
         </div>
+        <a href={`mailto:${email}`}>
         <button class="flex items-center gap-2 py-2 px-3 justify-center bg-primary text-primary-content leading-6">
           {textButton}
         </button>
+        </a>
       </div>
     </div>
   );
