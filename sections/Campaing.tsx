@@ -17,7 +17,8 @@ export default function CampaignTimer({
   textButton,
   email,
 }: Props) {
-  const totalSeconds = (Number(hours) * 3600) + (Number(minutes) * 60) + Number(seconds);
+  const totalSeconds = (Number(hours) * 3600) + (Number(minutes) * 60) +
+    Number(seconds);
   const [remainingSeconds, setRemainingSeconds] = useState(totalSeconds);
 
   useEffect(() => {
@@ -29,6 +30,13 @@ export default function CampaignTimer({
       clearInterval(interval);
     };
   }, []);
+
+  useEffect(() => {
+    if (remainingSeconds <= 0) {
+      // Executar ação quando o tempo restante for igual a zero
+      console.log("Tempo encerrado!");
+    }
+  }, [remainingSeconds]);
 
   // Função auxiliar para formatar o tempo restante no formato "HH:MM:SS"
   const formatTime = (time: number): string => {
@@ -70,9 +78,9 @@ export default function CampaignTimer({
           </div>
         </div>
         <a href={`mailto:${email}`}>
-        <button class="flex items-center gap-2 py-2 px-3 justify-center bg-primary text-primary-content leading-6">
-          {textButton}
-        </button>
+          <button class="flex items-center gap-2 py-2 px-3 justify-center bg-primary text-primary-content leading-6">
+            {textButton}
+          </button>
         </a>
       </div>
     </div>
