@@ -6,6 +6,7 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$$$$$0 from "./sections/Links.tsx";
+import * as $$$$$$$$1 from "./sections/Campaing.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -108,8 +109,10 @@ import * as i2$$$$$12 from "deco-sites/std/actions/vtex/cart/updateItemPrice.ts"
 import * as i2$$$$$13 from "deco-sites/std/actions/vtex/cart/updateItems.ts";
 import * as i2$$$$$14 from "deco-sites/std/actions/vtex/cart/updateProfile.ts";
 import * as i2$$$$$15 from "deco-sites/std/actions/vtex/cart/updateUser.ts";
-import * as i2$$$$$16 from "deco-sites/std/actions/vtex/wishlist/addItem.ts";
-import * as i2$$$$$17 from "deco-sites/std/actions/vtex/wishlist/removeItem.ts";
+import * as i2$$$$$16 from "deco-sites/std/actions/vtex/newsletter/subscribe.ts";
+import * as i2$$$$$17 from "deco-sites/std/actions/vtex/notifyme.ts";
+import * as i2$$$$$18 from "deco-sites/std/actions/vtex/wishlist/addItem.ts";
+import * as i2$$$$$19 from "deco-sites/std/actions/vtex/wishlist/removeItem.ts";
 
 const manifest = {
   "routes": {
@@ -129,7 +132,6 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
-    "deco-sites/time91/sections/Links.tsx": $$$$$$$$0,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,
@@ -140,6 +142,8 @@ const manifest = {
     "deco-sites/std/sections/SEO.tsx": i2$$$$10,
     "deco-sites/std/sections/SEOPDP.tsx": i2$$$$11,
     "deco-sites/std/sections/SEOPLP.tsx": i2$$$$12,
+    "deco-sites/time91/sections/Campaing.tsx": $$$$$$$$1,
+    "deco-sites/time91/sections/Links.tsx": $$$$$$$$0,
   },
   "loaders": {
     "$live/loaders/workflows/events.ts": i2$$$0,
@@ -202,8 +206,10 @@ const manifest = {
     "deco-sites/std/actions/vtex/cart/updateItems.ts": i2$$$$$13,
     "deco-sites/std/actions/vtex/cart/updateProfile.ts": i2$$$$$14,
     "deco-sites/std/actions/vtex/cart/updateUser.ts": i2$$$$$15,
-    "deco-sites/std/actions/vtex/wishlist/addItem.ts": i2$$$$$16,
-    "deco-sites/std/actions/vtex/wishlist/removeItem.ts": i2$$$$$17,
+    "deco-sites/std/actions/vtex/newsletter/subscribe.ts": i2$$$$$16,
+    "deco-sites/std/actions/vtex/notifyme.ts": i2$$$$$17,
+    "deco-sites/std/actions/vtex/wishlist/addItem.ts": i2$$$$$18,
+    "deco-sites/std/actions/vtex/wishlist/removeItem.ts": i2$$$$$19,
   },
   "functions": {
     "deco-sites/std/functions/butterCMSAds.ts": i2$0,
